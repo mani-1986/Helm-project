@@ -1,0 +1,20 @@
+<div class="page-title">Users List</div>
+<mat-divider style="margin-bottom: 20px"></mat-divider>
+<div>
+    <mat-card *ngFor="let user of people$ | async" style="margin-bottom: 10px;">
+        <span class="user-container">
+            <span>
+                <h3>{{ user.name }}</h3>
+                {{ user.email }}
+            </span>
+            <mat-card-actions>
+                <a class="edit-button" [routerLink]="['/manage-user', user.id]" mat-button>
+                    <mat-icon>edit</mat-icon>
+                </a>
+                <a class="edit-button" [routerLink]="['/manage-user']" mat-button>
+                    <mat-icon>person_add_alt</mat-icon>
+                </a>
+            </mat-card-actions>
+        </span>
+    </mat-card>
+</div>

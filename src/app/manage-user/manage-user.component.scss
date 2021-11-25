@@ -1,0 +1,31 @@
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.container {
+    padding: 10px;
+}
+  
+.form {
+  width: 100%;
+}
+
+.form-element {
+  padding: 5px 0px 25px 2px;
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+}
+
+.page-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 30px;
+}
